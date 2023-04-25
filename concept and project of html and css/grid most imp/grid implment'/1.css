@@ -1,0 +1,55 @@
+
+/* grid container property hai */
+.container
+{
+    border: 3px solid black;
+    background-color: yellow;
+    height: 500px;
+
+
+    display: grid;
+  
+/* ye grid me column add krne ke liye krte hai */
+
+/* repeat ke ander ham do argument dete hai first numberof column second size of column  fr fraction unit hai ap koi bhi unit de skte hai*/
+
+/* fr ka use krke ap flexible grid bna skte ho */
+    /* grid-template-columns: repeat(3,1fr); */
+     grid-template-columns: 100px 1fr 1fr  ;
+    
+
+    grid-template-rows:50px 1fr 30px;
+
+    /* ye besically gap genrate krega between row and column */
+    gap: 15px;
+}
+
+.box
+{
+    border: 3px solid black;
+    background-color: blue;
+    /* width: 80px;*/
+    /* height: 80px;  */
+}
+
+#b1,#b4
+{
+    /* ye element property hai kisi box ko kitne column tak ham stretch krna hai per us box ki width phle se na set ho */
+    grid-column-start: 1;
+    grid-column-end:4;
+}
+
+#b3
+{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+/* #b4
+{
+    /* ye element property hai kisi box ko kitne row tak ham stretch krna hai per us box ki width phle se na set ho */
+
+    
+    /* grid-column-start: 1;
+    grid-column-end: 4;
+} */ 
+

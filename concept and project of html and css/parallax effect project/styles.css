@@ -1,0 +1,62 @@
+
+/* this is compulsary for all websites ye ham isliye use krte hai jo remaining marging or padding bach rhi ho khi sides se then we are use this*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height:100vh;
+    overflow-x:hidden;
+    overflow-y:auto;
+
+    /*browser and hmari eye ke beech ka distance  */
+    perspective:10px;
+}
+
+.container{
+    /* position:relative; */
+
+    /* adventure ko centre me lane ke liye we are use display justify content and align item property */
+
+    display: flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100%;
+
+    /* 3d property lane ke liye we are use this property */
+    transform-style: preserve-3d;
+    
+}
+
+.background{
+
+    /* 3d transform property ka use hua hai for both image ko set krne ke liye */
+    transform:translateZ(-40px) 
+    
+    /* we are use scale for zooming image */
+
+    scale(5);
+}
+
+.foreground{
+    transform:translateZ(-20px) scale(3);
+}
+
+.background, .foreground{
+    position:absolute;
+    height:100%;
+    width:100%;
+    /* z-index:-1; */
+}
+
+h1
+{
+    position:absolute;
+    font-size: 10rem;
+    color: white;
+    
+
+}

@@ -1,0 +1,39 @@
+div
+{
+    border: 1px solid black;
+    width: 80px;
+    height:50px;
+    display: inline-block;
+    background-color: red;
+}
+
+/* mana hmne b3 per relative position apply kiya */
+
+/* #b3
+{
+    position:relative;
+    top:20px;
+    right: 30px;
+    left:100px;
+   
+} */
+
+/* fixed positioning mana b1 ko fix krna hai */
+ #m
+{
+    width: 1000px;
+    height: 1000px;
+    background: yellow;
+} 
+
+/* #b1
+{
+ position: fixed;
+}  */ 
+
+/* let b4 use as absolute */
+#b4
+{
+    position: sticky;
+    top: 4px;
+}

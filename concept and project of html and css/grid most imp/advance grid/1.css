@@ -1,0 +1,33 @@
+.container
+{
+    background-color: gray;
+    border: 3px solid black;
+
+    height: 500px;
+
+    display: grid;
+    
+    grid-template-columns:repeat(4,1fr);
+    /* grid-template-rows: 80px 150px 200px 30px; */
+
+/* yadi hme ye pta na ho ki kitne number of rows add krne hai then ham ye use krte hai ex facebook hm scroll krte jate hai and nye row add hote rhte hai */
+
+/* first value minimum size of element hai and next number of row */
+grid-auto-rows:minmax(100px,auto);
+
+      
+     
+     gap: 10px;
+
+}
+
+
+
+/* elements of container */
+.box
+{
+   border: 3px solid black;
+   background-color: blue;
+   height: 100px;
+   width: 100px;
+}

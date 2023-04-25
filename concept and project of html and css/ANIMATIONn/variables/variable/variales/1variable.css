@@ -1,0 +1,28 @@
+
+/* ye globally declaration hai variable ka */
+/* variable bhut imp hai */
+:root
+{
+    --cnt:red;
+}
+.container
+{
+    border: 2px solid black;
+    height: 400px;
+
+    background-color: yellow;
+
+    /* change using variable */
+    background-color: var(--cnt);
+}
+
+.box
+{
+    border: 3px solid black;
+    color: red;
+
+    /* variable declaration ye locally declear hua hai iska scope keval isi element tak rhega */
+
+    --ans:blue;
+    color: var(--ans);
+}

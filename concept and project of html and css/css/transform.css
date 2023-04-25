@@ -1,0 +1,10 @@
+#A
+{
+    /* transform: translate(100px,100px); */
+    border: 1px solid black;
+   /* transform: rotate(-45deg); */
+    font-size: 20px;
+    margin: 50px;
+    /* transform: scale(1,5); */
+    transform: skew(45deg);
+}

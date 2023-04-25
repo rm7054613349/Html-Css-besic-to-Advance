@@ -1,0 +1,66 @@
+ 
+ /* LAYOUT OF BLOG WEBSITE */
+ 
+ .container
+{
+    background-color: gray;
+    border:1px solid black;
+
+    height: 500px;
+
+    display: grid;
+
+    grid-template-columns:(3,1fr);
+    grid-template-rows: 80px 180px 200px 30px;
+
+      
+    /* grid tem[plet area jab ham use krenge then grid area bhi use hoga] */
+
+    /* agr teen column hai then teno place me jo variable leker jo grid area define kroge vhi pure me apply ho jayega */
+    grid-template-areas:
+      "hd hd hd "
+      "sd ct ct"
+       "sd ct ct"
+       "ft ft ft" ;
+      
+     gap: 2px;
+
+}
+
+
+
+/* elements of container */
+.box
+{
+   border: 3px solid black;
+   background-color: blue;
+   /* height: 100px;
+   width: 100px; */
+}
+
+/* grid templet area me ham row and column ka kuch name define krte hai then bad me uske acc layout create krte hai */
+
+/* ye krna jroori hai */
+#header
+{
+   grid-area: hd;
+}
+#side
+{
+   grid-area: sd;
+}
+#content
+{
+   grid-area: ct;
+}
+
+#main
+{
+   grid-area: mn;
+}
+#footer
+{
+   grid-area: ft;
+}
+
+

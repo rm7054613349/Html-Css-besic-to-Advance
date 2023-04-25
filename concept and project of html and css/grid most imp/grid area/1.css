@@ -1,0 +1,35 @@
+.container
+{
+    background-color: gray;
+    border: 3px solid black;
+
+    height: 500px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+     gap: 20px;
+
+}
+
+/* elements of container */
+.box
+{
+   border: 3px solid black;
+   background-color: blue;
+   /* height: 100px;
+   width: 100px; */
+}
+
+/* grid area element property hai 
+  yadi hmae kisi grid ke kisi perticuler element ko row wise and column wise strtched krna hai at a time then we are use grid area ap normally bhi krr skte hai
+  
+      syntax grid area=starting row/starting column/ending row /ending row /ending column*/
+
+      /* ye tab hi work krega jab hamne koi hight and width na di ho element ko */
+#b1
+{
+    grid-area: 1/1/3/3;
+}
